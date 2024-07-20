@@ -1,5 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <div>
-        Shobikannu loves S
-    </div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            width: 80px;
+            height: 50px;
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+    </style>
 </head>
+<body>
+    <span id="sp-1"></span>
+    <span id="sp-2"></span>
+    <br><br><br>
+    <button class="btn" onclick="add()">Add</button>
+    <button class="btn" onclick="substract()">Substract</button>
+    <button class="btn" onclick="multiply()">Multiply</button>
+    <button class="btn" onclick="division()">Division</button>
+    <br><br><br>
+    <span id="res-p">Result is : </span>
+    <script>
+        let n1 = 10;
+        let n2 = 2;
+        let result=0;
+        let pResult = document.getElementById("res-p")
+        document.getElementById("sp-1").innerHTML = n1;
+        document.getElementById("sp-2").innerHTML = n2;
+
+        function add(){
+            pResult.textContent = "    "
+            result=n1+n2;
+            pResult.textContent +="Sum : "+ result;
+           
+        }
+        function substract(){
+            pResult.textContent = "    "
+            result=n1-n2;
+            pResult.textContent +="Sum : "+ result;
+            result=0;
+            console.log(result)
+        }
+        function multiply(){
+            pResult.textContent = "    "
+            result=n1*n2;
+            pResult.textContent += "Sum : "+result;
+        }
+        function division(){
+            pResult.textContent = "    "
+            result=n1/n2;
+            pResult.textContent += "Sum : "+    result;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+#h1-head{
+    color:blanchedalmond;
+    
+}
+body{
+    background-color: green;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 170px;
+    background: goldenrod;
+    border: none;
+    border-radius: 2px;
+    color: green;
+    font-weight: bold;
+    margin: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
